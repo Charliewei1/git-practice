@@ -54,4 +54,5 @@ Pull requestsタブ
 git fetch origin ローカルにあるリモートリポジトリのoriginのコピーに最新情報をダウンロード
 git checkout main mainブランチに切り替え
 git merge origin/main リモートリポジトリのmainブランチの情報を反映
+git pull origin main 慣れたらこっち。pullはfetchとmergeを合わせたもの
 ```
