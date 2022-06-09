@@ -41,3 +41,17 @@ git push -u origin "ブランチ名" どのリポジトリにどのブランチ�
 ```
 ex: git commit -m "[Add] Featureのレイアウト"
 ```
+
+## プルリクエスト
+2 branchesからNew Pull Requestへ
+mainブランチとtopic1ブランチの変更内容を比較し、合流させるためのプルリクエストが作成される
+Pull requestsタブ
+|Conversation|Commits|Files changed|
+|--|--|--|
+|プルリクエストのタイトルとコメント、コードレビューのコメントや修正コミットのアップロード履歴|プルリクエストの対象であるtopic1ブランチのコミット履歴|変更箇所を確認し、それぞれの行に対してレビューコメントを残すことができる|
+
+```
+git fetch origin ローカルにあるリモートリポジトリのoriginのコピーに最新情報をダウンロード
+git checkout main mainブランチに切り替え
+git merge origin/main リモートリポジトリのmainブランチの情報を反映
+```
